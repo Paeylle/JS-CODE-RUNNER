@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 16px;
+  background-color: rgb(49, 75, 222);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 2.75rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.container {
+  display: grid;
+  gap: 1rem;
+}
+.code-area {
+  background-color: #102d83df;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.code-editor {
+  width: 100%;
+  height: 700px;
+  background-color: transparent;
+  color: white;
+  font-family: monospace;
+  border: none;
+  resize: none;
+  background-color: #001233;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.15rem;
+}
+.code-editor:focus {
+  outline: none;
+}
+.control-panel {
+  background-color: #102d83df;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+select,
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+}
+select {
+  width: 140px;
+  background-color: white;
+}
+button {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #f0f0f0;
+}
+.output-label {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.output-area {
+  background-color: #001233;
+  color: white;
+  font-family: monospace;
+  height: 630px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.15rem;
+  overflow-y: auto;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 400px;
+  }
+}
